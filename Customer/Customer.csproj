@@ -29,6 +29,7 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\src\app\customer-list\" />
+    <Folder Include="ClientApp\src\app\account-list\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

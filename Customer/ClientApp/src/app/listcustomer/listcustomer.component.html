@@ -4,42 +4,36 @@
   </div>
   <div class="input-group mb-3">
     <input [(ngModel)]='filteredCustomer' type="text" class="form-control" placeholder="Müşteri Numaranızı Giriniz" aria-label="Recipient's username" aria-describedby="button-addon2">
-    <button (click)='listCustomer(listCustomer)' class="btn btn-outline-secondary" type="button" id="button-addon2">Ara</button>
+    <button (click)='listCustomer(listCustomer)'  class="btn btn-outline-secondary" type="button" id="button-addon2">Ara</button>
   </div>
 
   <table class="table">
     <thead>
-
-
       <tr>
-
-
-        
         <th scope="col">Müşteri Numarası</th>
         <th scope="col">Adı</th>
         <th scope="col">Soyadı</th>
         <th scope="col">Doğum Tarihi</th>
         <th scope="col">İl</th>
         <th scope="col">Şube Kodu</th>
+        <th scope="col"></th>
       </tr>
     </thead>
     <tbody>
-
       <tr *ngFor="let customer of customers">
-        
+
         <td>{{customer.id}}</td>
         <td>{{customer.name}}</td>
         <td>{{customer.lastName}}</td>
-        <td>{{customer.dateTime}}</td>
+        <td>{{customer.dateOfBirth}}</td>
         <td>{{customer.birthCity}}</td>
-        <td>{{customer.ownerBranchCode}}</td>
+        <td>{{customer.ownerBranchCode}}  </td>
+       <td><button (click)='listAccount(customer.id)' [routerLink]="['/customer-account-info', customer.id]" class="btn btn-outline-secondary" type="button" id="button-addon2">Görüntüle</button></td>
 
       </tr>
-
-
-
     </tbody>
   </table>
+
 
 
 </div>

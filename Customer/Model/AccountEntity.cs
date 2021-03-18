@@ -12,5 +12,7 @@ namespace Customer.Model
         public int AccountNumber { get; set; }
         public DateTime OpeningDate { get; set; }
         public string IBAN { get; set; }
+
+       
     }
 }

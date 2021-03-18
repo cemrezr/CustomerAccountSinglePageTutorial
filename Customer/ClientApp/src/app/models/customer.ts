@@ -2,7 +2,7 @@ export class Customer {
   id: number;
   name: string;
   lastName: string;
-  dateTime: Date;
+  dateOfBirth: Date;
   birthCity: string;
   ownerBranchCode: number;
 

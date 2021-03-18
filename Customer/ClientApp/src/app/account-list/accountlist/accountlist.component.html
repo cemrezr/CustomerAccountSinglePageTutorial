@@ -1,0 +1,27 @@
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Şube Kodu</th>
+      <th scope="col">Hesap Numarası</th>
+      <th scope="col">Açılış Tarihi</th>
+      <th scope="col">IBAN</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let a of account">
+      <td>{{a.branchCode}}</td>
+      <td>{{a.accountNumber}}</td>
+      <td>{{a.openingDate}}</td>
+      <td>{{a.iban}}</td>
+
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+

@@ -14,6 +14,10 @@ namespace Customer.Data
 
         }
         public DbSet<CustomerEntity> Customer { get; set; }
+
+        public DbSet<AccountEntity> Account { get; set; }
+
+        
        
     }
 }

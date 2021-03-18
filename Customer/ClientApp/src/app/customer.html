@@ -1,14 +1,30 @@
-<table>
-  <tr *ngFor="let customer of customers">
+<table class="table">
+  <thead>
 
-    <td>{{customer.id}}</td>
-    <td>{{customer.name}}</td>
-    <td>{{customer.lastName}}</td>
-    <td>{{customer.dateTime}}</td>
-    <td>{{customer.birthCity}}</td>
-    <td>{{customer.ownerBranchCode}}</td>
+    <tr *ngFor="let customer of customers">
 
 
-  </tr>
+
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">Last</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr>
+      <th scope="row">1</th>
+      <td>{{customer.id}}</td>
+      <td>{{customer.name}}</td>
+      <td>{{customer.lastName}}</td>
+      <td>{{customer.dateTime}}</td>
+      <td>{{customer.birthCity}}</td>
+      <td>{{customer.ownerBranchCode}}</td>
+
+    </tr>
+
+
+    
+  </tbody>
 </table>
-
